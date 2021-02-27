@@ -3,6 +3,15 @@
 You can define one or more base directories to search in - and optional
 a search string to search in the files
 
+Use:
+Hit <leader>hh keys to start the search in all archives. You will be asked
+for one or more directories and an optional search string (default: word under
+cursor). 
+The search may take some seconds. Then a new buffer with the result
+will be opened. Each archive file name is followed by the matched lines. You 
+are able to click on the line with the archive file (keys: gf) name to open,
+browse and edit the files in the archive.
+
 There are lots of solutions to search inside the current working directory,
 this plugin provides searching in external directories. This is
 useful on java maven projects where all libraries are stored in a repository
@@ -19,5 +28,3 @@ Commands:
 
 							*fiand-settings*
 This plugin doesn't have any settings.
-
-
