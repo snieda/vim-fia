@@ -21,7 +21,8 @@ function s:FindInAllArchives(search)
 	"TODO: highlight search string 
 	"put = fff
 endfunction
-command! -nargs=1 FindInAllArchives call s:FindInAllArchives(<f-args>)
-noremap <unique> <script> <Plug>Fia;  <SID>FindInAllArchives
-noremap <leader>hh :call <SID> FindInAllArchives(expand("<cword>"))<CR>
+command! -nargs=1 FindInAllArchives call <SID>FindInAllArchives(<f-args>)
+noremap <unique> <script> <Plug>Fiand;  <SID>FindInAllArchives
+noremenu <script> Plugin.Add\ Find in All Archives    <SID>FindInAllArchives
+noremap <leader>hh :call <SID>FindInAllArchives(expand("<cword>"))<CR>
 
